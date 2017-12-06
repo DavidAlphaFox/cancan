@@ -176,6 +176,8 @@ module CanCan
   end
 end
 
+## 在ActiveRecord的基础类中，直接进行class_eval
+## 将ModelAdditions直接注入ActiveRecord中
 ActiveRecord::Base.class_eval do
   include CanCan::ModelAdditions
 end
