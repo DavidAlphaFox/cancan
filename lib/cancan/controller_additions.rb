@@ -390,6 +390,7 @@ module CanCan
   end
 end
 
+## inject into ActionController
 if defined? ActionController::Base
   ActionController::Base.class_eval do
     include CanCan::ControllerAdditions
